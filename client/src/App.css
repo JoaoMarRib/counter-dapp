@@ -1,0 +1,155 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+
+/* Informações da conta */
+.account-info {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.account-info p {
+  margin: 0;
+  color: #666;
+}
+
+/* Seção do contador */
+.counter-section {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.counter-display h2 {
+  font-size: 3rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+/* 3. ESTILO PARA MENSAGEM DE PARABÉNS */
+.congratulations {
+  background-color: #FFD700;
+  color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  border: 2px solid #FFA500;
+  animation: celebration 0.5s ease-in-out;
+}
+
+@keyframes celebration {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.congratulations h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.congratulations p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* Container dos botões */
+.buttons {
+  margin: 30px 0;
+}
+
+/* Estilos dos botões */
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Botão incrementar (verde) */
+.btn-increment {
+  background-color: #4CAF50;
+}
+
+.btn-increment:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+/* Botão decrementar (vermelho) */
+.btn-decrement {
+  background-color: #f44336;
+}
+
+.btn-decrement:hover:not(:disabled) {
+  background-color: #da190b;
+}
+
+/* 2. BOTÃO PARA ZERAR (laranja) */
+.btn-reset {
+  background-color: #FF9800;
+}
+
+.btn-reset:hover:not(:disabled) {
+  background-color: #F57C00;
+}
+
+/* Botões desabilitados */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Seção de informações */
+.info {
+  background-color: #e7f3ff;
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 4px solid #2196F3;
+  margin-top: 20px;
+}
+
+.info p {
+  margin: 0;
+  color: #666;
+  font-style: italic;
+}
+
+/* Responsividade para telas pequenas */
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .counter-display h2 {
+    font-size: 2.5rem;
+  }
+  
+  button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+  }
+}
